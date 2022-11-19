@@ -1,0 +1,86 @@
+@font-face {
+  font-family: "captain";
+  src: url(./font/Osiris.otf);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "captain";
+  margin: 0;
+  padding: 0;
+  overflow: none;
+}
+
+body {
+  max-width: 1500px;
+  background-color: #222;
+  color: white;
+}
+
+.takeTime {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 20px;
+}
+
+#submit {
+  border: 3px solid white;
+  font-size: 2.25rem;
+  padding: 10px;
+  border-radius: 3px;
+  transition: 0.4s ease-in-out;
+}
+
+#submit:hover {
+  box-shadow: rgba(240, 46, 170, 0.4) 2px 2px, rgba(240, 46, 170, 0.3) 4px 4px,
+    rgba(240, 46, 170, 0.2) 8px 8px, rgba(240, 46, 170, 0.1) 10px 10px,
+    rgba(240, 46, 170, 0.05) 12px 12px;
+  cursor: pointer;
+}
+
+.takeTime input[type="datetime-local"] {
+  height: 80px;
+  width: 50%;
+  border: none;
+  outline: none;
+  text-align: center;
+  justify-content: center;
+  font-size: 2.3rem;
+  border-radius: 3px;
+}
+
+.showTime {
+  height: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10rem;
+}
+
+footer {
+  font-size: 0.7rem;
+  position: fixed;
+  bottom: 0;
+  margin-right: 10px;
+  width: 99%;
+  text-align: right;
+}
+
+#backbtn {
+  margin: 10px;
+  padding: 4px;
+  background-color: white;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 50px;
+  transition: 0.2s ease-in-out;
+}
+
+#backbtn:hover {
+  box-shadow: #242424 0px 2px 4px 0px, #242424 0px 2px 16px 0px;
+}
